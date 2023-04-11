@@ -1,0 +1,40 @@
+--RENAMING COLUMNS IN SQL 
+SELECT 
+    FirstName AS [Customer First Name] , 
+    LastName AS [Customer Last Name ],
+     Phone AS [Customer Phone Number], 
+    Email AS [Customer Email Address]
+FROM
+    Customer
+
+
+--Another way of renamimg culumns is to put the new names into open and close quotes 
+SELECT
+    FirstName AS 'Customer First Name',
+    LastName AS 'Customer Last Name',
+    Phone AS 'Customer Phone Number',
+    Email AS 'Customer Email Address'
+FROM
+    Customer
+    
+
+--Another way of  renaming the columns is to put them in a double quotation marks
+SELECT
+    FirstName AS "Customer First Name",
+    LastName AS "Customer Last Name",
+    Phone AS "Customer Phone Number",
+    Email AS "Customer Email Address"
+FROM
+    Customer
+    
+
+
+--Assuming you want only the Email column to be capitals 
+SELECT
+    FirstName AS "Customer First Name",
+    LastName AS "Customer Last Name",
+    Phone AS "Customer Phone Number",
+    Email AS EMAIL
+FROM
+    Customer
+    
